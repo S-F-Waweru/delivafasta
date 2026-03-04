@@ -1,0 +1,55 @@
+<nav class="navbar-glass sticky top-0 z-50" [class.navbar-scrolled]="isScrolled">
+  <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+    <h2 routerLink="/" class="text-2xl font-bold text-(--text) cursor-pointer">
+      <img class="h-10" src="images/logo.svg" alt="Delivafasta" />
+    </h2>
+
+    <div class="hidden md:flex gap-8 items-center">
+      <p class="nav-item cursor-pointer" routerLink="/home" routerLinkActive="text-primary active">
+        Home
+      </p>
+      <p class="nav-item cursor-pointer" routerLink="/about" routerLinkActive="text-primary active">
+        About us
+      </p>
+      <p
+        class="nav-item cursor-pointer"
+        routerLink="/products"
+        routerLinkActive="text-primary active"
+      >
+        Products
+      </p>
+      <p
+        class="nav-item cursor-pointer"
+        routerLink="/contact-us"
+        routerLinkActive="text-primary active"
+      >
+        Contact Us
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button
+        (click)="toggleDarkMode()"
+        class="flex justify-center align-middle p-3 bg-background rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors me-3"
+        type="button"
+      >
+        <i
+          [className]="isDarkMode() ? 'pi pi-sun text-yellow-500' : 'pi pi-moon text-gray-400'"
+          style="font-size: 1.2rem"
+        ></i>
+      </button>
+
+      <p-button
+        routerLink="/contact-us"
+        label="Reach out"
+        icon="pi pi-angle-right"
+        iconPos="right"
+        rounded="rounded"
+        class="hidden md:block text-xl"
+      >
+      </p-button>
+
+      <sidebar></sidebar>
+    </div>
+  </div>
+</nav>

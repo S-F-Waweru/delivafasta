@@ -1,0 +1,24 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves the track left by exactly half its width (one full set of logos) */
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 120s linear infinite;
+}
+
+.marquee-section {
+  flex: 0 0 auto;
+}
+
+/* Optional: Stop on hover */
+.marquee-track:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,209 @@
+<section
+  class="relative overflow-hidden flex items-start"
+  style="background-color: var(--background)"
+>
+  <div
+    class="container mx-auto px-6 lg:px-20 relative z-10 py-14 grid lg:grid-cols-2 gap-20 items-center"
+  >
+    <!-- Left: Copy -->
+    <div class="flex flex-col gap-8">
+      <!-- Badge -->
+      <div
+        class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
+        style="
+          border-color: color-mix(in oklch, var(--color-primary) 40%, transparent);
+          background: color-mix(in oklch, var(--color-primary) 10%, transparent);
+          color: var(--color-blue-300);
+        "
+      >
+        <span
+          class="w-2 h-2 rounded-full animate-pulse"
+          style="background: var(--color-primary)"
+        ></span>
+        Built for B2B Distribution
+      </div>
+
+      <!-- Headline -->
+      <div class="flex flex-col gap-3">
+        <h1
+          class="font-bold leading-[1.06] tracking-tight"
+          style="font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--text)"
+        >
+          Deliver to Every<br />
+          <span style="color: var(--color-primary)">Business Associate.</span><br />
+          On Time. Every Time.
+        </h1>
+        <p class="text-lg leading-relaxed max-w-md" style="color: var(--text-secondary)">
+          DelivaFasta connects manufacturers, mills, and FMCG companies with their distributors and
+          retailers — through one intelligent courier platform.
+        </p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex items-center gap-4 flex-wrap">
+        <button
+          class="pl-7 pr-5 py-3.5 rounded-full font-semibold flex justify-center items-center text-sm tracking-wide transition-colors duration-200 text-white"
+          style="background: var(--color-primary)"
+          onmouseover="this.style.background = 'var(--color-primary-hover)'"
+          onmouseout="this.style.background = 'var(--color-primary)'"
+        >
+          Contact us
+
+          <i class="text-white pi pi-angle-right ms-2"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Live dashboard card -->
+    <div class="relative hidden lg:flex flex-col gap-4">
+      <div
+        class="rounded-2xl border p-6 flex flex-col gap-5 backdrop-blur-sm"
+        style="background: var(--surface); border-color: var(--border)"
+      >
+        <!-- Card header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <p
+              class="text-xs uppercase tracking-widest font-semibold"
+              style="color: var(--text-secondary)"
+            >
+              Live Dispatch
+            </p>
+            <p class="text-lg font-bold" style="color: var(--text)">Today's Deliveries</p>
+          </div>
+          <span
+            class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5"
+            style="
+              background: color-mix(in oklch, var(--color-primary) 15%, transparent);
+              color: var(--color-primary);
+            "
+          >
+            <i class="pi pi-circle-fill text-[8px] animate-pulse"></i> Live
+          </span>
+        </div>
+
+        <!-- Rows -->
+        <div class="flex flex-col gap-3">
+          <!-- Row 1 — En route -->
+          <div
+            class="flex items-center gap-4 p-3 rounded-xl"
+            style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
+          >
+            <div
+              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              style="background: color-mix(in oklch, var(--color-primary) 15%, transparent)"
+            >
+              <i class="pi pi-box text-base" style="color: var(--color-primary)"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-semibold truncate" style="color: var(--text)">
+                Ajab Flour — 40 bags
+              </p>
+              <p class="text-xs" style="color: var(--text-secondary)">
+                Westlands Depot → Karen Branch
+              </p>
+            </div>
+            <span
+              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 flex items-center gap-1"
+              style="
+                background: color-mix(in oklch, var(--color-primary) 15%, transparent);
+                color: var(--color-primary);
+              "
+            >
+              <i class="pi pi-box text-[10px]"></i> En route
+            </span>
+          </div>
+
+          <!-- Row 2 — Scheduled -->
+          <div
+            class="flex items-center gap-4 p-3 rounded-xl"
+            style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
+          >
+            <div
+              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              style="background: color-mix(in oklch, var(--color-secondary) 20%, transparent)"
+            >
+              <i class="pi pi-box text-base" style="color: var(--color-blue-300)"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-semibold truncate" style="color: var(--text)">
+                Grain Industries — 120 units
+              </p>
+              <p class="text-xs" style="color: var(--text-secondary)">Industrial Area → Kisumu</p>
+            </div>
+            <span
+              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 border flex items-center gap-1"
+              style="border-color: var(--border); color: var(--text-secondary)"
+            >
+              <i class="pi pi-clock text-[10px]"></i> Scheduled
+            </span>
+          </div>
+
+          <!-- Row 3 — Delivered -->
+          <div
+            class="flex items-center gap-4 p-3 rounded-xl"
+            style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
+          >
+            <div
+              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              style="background: color-mix(in oklch, var(--color-blue-300) 15%, transparent)"
+            >
+              <i class="pi pi-box text-base" style="color: var(--color-blue-200)"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-semibold truncate" style="color: var(--text)">
+                Bidco Oil — 200 cartons
+              </p>
+              <p class="text-xs" style="color: var(--text-secondary)">Ruiru Plant → Mombasa</p>
+            </div>
+            <span
+              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 border flex items-center gap-1"
+              style="
+                border-color: color-mix(in oklch, var(--color-primary) 30%, transparent);
+                color: var(--color-primary);
+              "
+            >
+              <i class="pi pi-check-circle text-[10px]"></i> Delivered
+            </span>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between text-xs" style="color: var(--text-secondary)">
+            <span>Daily target</span>
+            <span style="color: var(--text); font-weight: 600">74 / 100 deliveries</span>
+          </div>
+          <div class="w-full h-2 rounded-full" style="background: var(--border)">
+            <div
+              class="h-2 rounded-full"
+              style="
+                width: 74%;
+                background: linear-gradient(90deg, var(--color-primary), var(--color-blue-400));
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating toast -->
+      <div
+        class="absolute -bottom-4 -left-6 flex items-center gap-3 px-4 py-3 rounded-xl shadow-xl border backdrop-blur-md"
+        style="background: var(--surface); border-color: var(--border)"
+      >
+        <div
+          class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+          style="background: color-mix(in oklch, var(--color-primary) 15%, transparent)"
+        >
+          <i class="pi pi-check-circle text-sm" style="color: var(--color-primary)"></i>
+        </div>
+        <div>
+          <p class="text-xs font-semibold" style="color: var(--text)">Delivery confirmed</p>
+          <p class="text-xs" style="color: var(--text-secondary)">
+            Ajab Flour — Karen Branch · 2m ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

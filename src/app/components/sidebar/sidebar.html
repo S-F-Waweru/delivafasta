@@ -1,0 +1,111 @@
+<div class="card flex justify-center">
+  <p-drawer
+    #drawerRef
+    appendTo="body"
+    [(visible)]="visible"
+    styleClass="!bg-background !border-r !border-(--border)/40 w-full md:w-80"
+  >
+    <ng-template #headless>
+      <div class="flex flex-col h-full bg-background">
+        <div class="flex items-center justify-between px-8 py-10 shrink-0">
+          <span class="inline-flex items-center">
+            <img
+              routerLink="/"
+              src="images/logo.svg"
+              class="cursor-pointer h-8 w-auto"
+              alt="Delivafasta Logo"
+            />
+          </span>
+          <span>
+            <p-button
+              type="button"
+              (click)="visible = false"
+              icon="pi pi-times"
+              [rounded]="true"
+              [text]="true"
+              styleClass="text-(--text) hover:bg-primary/10 h-10 w-10"
+            ></p-button>
+          </span>
+        </div>
+
+        <!--        <p class="nav-item cursor-pointer" routerLink="/home" routerLinkActive="text-primary">Home</p>-->
+        <!--        <p class="nav-item cursor-pointer" routerLink="/about" routerLinkActive="text-primary">About Voltic</p>-->
+        <!--        <p class="nav-item cursor-pointer" routerLink="/products" routerLinkActive="text-primary">Products</p>-->
+        <!--        <p class="nav-item cursor-pointer" routerLink="/impact" routerLinkActive="text-primary">Social Impact</p>-->
+        <!--        <p class="nav-item cursor-pointer" routerLink="/contact-us" routerLinkActive="text-primary">Contact Us</p>-->
+
+        <div class="overflow-y-auto px-4">
+          <ul class="list-none p-0 m-0 space-y-2">
+            <li>
+              <a
+                routerLink="/"
+                (click)="visible = false"
+                class="flex items-center px-6 py-4 rounded-2xl text-(--text) font-bold tracking-tight hover:bg-primary/5 hover:text-primary transition-all duration-300"
+              >
+                <span class="text-xl">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                routerLink="/about"
+                (click)="visible = false"
+                class="flex items-center px-6 py-4 rounded-2xl text-(--text) font-bold tracking-tight hover:bg-primary/5 hover:text-primary transition-all duration-300"
+              >
+                <span class="text-xl">About Us</span>
+              </a>
+            </li>
+            <li>
+              <a
+                routerLink="/products"
+                (click)="visible = false"
+                class="flex items-center px-6 py-4 rounded-2xl text-(--text) font-bold tracking-tight hover:bg-primary/5 hover:text-primary transition-all duration-300"
+              >
+                <span class="text-xl">Products</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                routerLink="/contact-us"
+                (click)="visible = false"
+                class="flex items-center px-6 py-4 rounded-2xl text-(--text) font-bold tracking-tight hover:bg-primary/5 hover:text-primary transition-all duration-300"
+              >
+                <span class="text-xl">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--<div class="mt-auto p-8 border-t border-(--border)/40 bg-surface/30">
+          <div class="space-y-4">
+            <p class="text-[10px] font-black uppercase tracking-[0.2em] text-(--text-secondary)">
+              Regional Support
+            </p>
+            <div class="flex flex-col gap-2">
+              <a
+                href="tel:+254737740740"
+                class="text-sm font-bold text-(--text) hover:text-primary transition-colors"
+              >
+                <i class="pi pi-phone mr-2 text-xs"></i> +254 709 215 215
+              </a>
+              <a
+                href="mailto:info@voltic-africa.com"
+                class="text-sm font-bold text-(--text) hover:text-primary transition-colors"
+              >
+                <i class="pi pi-envelope mr-2 text-xs"></i> info&#64;voltic-africa.com
+              </a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </ng-template>
+  </p-drawer>
+
+  <p-button
+    class="block md:hidden"
+    (click)="visible = true"
+    icon="pi pi-bars"
+    [text]="true"
+    styleClass="text-(--text) h-12 w-12"
+  />
+</div>

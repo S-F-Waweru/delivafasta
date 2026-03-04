@@ -1,0 +1,31 @@
+@reference "../../../styles.css";
+
+.navbar-container {
+  @apply transition-all duration-300 ease-in-out;
+  /* Use oklch or standard hex/rgb */
+  background: color-mix(in srgb, var(--background), transparent 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  @apply shadow-sm;
+}
+
+.nav-item {
+  @apply font-family-heading font-bold cursor-pointer transition-all duration-300 ease-in-out hover:text-primary;
+}
+
+.active {
+  font-weight: bolder;
+}
+.navbar-scrolled {
+  /* Use an alpha value (0.7 or 0.8) to make it translucent */
+  background-color: color-mix(in srgb, var(--background), transparent 20%);
+  @apply shadow-sm backdrop-blur-md;
+  /* Safari support is still a bit picky, keep this: */
+  -webkit-backdrop-filter: blur(12px);
+}

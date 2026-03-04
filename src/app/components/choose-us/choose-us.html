@@ -1,0 +1,182 @@
+<section class="relative overflow-hidden py-24" style="background-color: var(--background)">
+  <div class="container mx-auto px-6 lg:px-20">
+    <!-- Section header -->
+    <div class="flex flex-col gap-4 mb-16 max-w-2xl">
+      <div
+        class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
+        style="
+          border-color: color-mix(in oklch, var(--color-primary) 40%, transparent);
+          background: color-mix(in oklch, var(--color-primary) 10%, transparent);
+          color: var(--color-blue-300);
+        "
+      >
+        <i class="pi pi-star-fill text-[10px]"></i>
+        Why Choose DelivaFasta
+      </div>
+      <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--text)">
+        Delivery you can count on.<br />
+        <span style="color: var(--color-primary)">Every single time.</span>
+      </h2>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary); max-width: 520px">
+        We built DelivaFasta because businesses deserve more than "we'll try our best." Our couriers
+        are ours — trained, tracked, and accountable to you.
+      </p>
+    </div>
+
+    <!-- Stats bar -->
+    <div
+      class="grid grid-cols-3 gap-px rounded-2xl overflow-hidden mb-16 border"
+      style="border-color: var(--border)"
+    >
+      <div class="flex flex-col gap-1 px-8 py-6" style="background: var(--surface)">
+        <span
+          class="text-3xl font-bold"
+          style="color: var(--text); font-family: 'Manrope', sans-serif"
+          >100+</span
+        >
+        <span class="text-sm" style="color: var(--text-secondary)">In-house couriers</span>
+      </div>
+      <div
+        class="flex flex-col gap-1 px-8 py-6 border-x"
+        style="background: var(--surface); border-color: var(--border)"
+      >
+        <span
+          class="text-3xl font-bold"
+          style="color: var(--text); font-family: 'Manrope', sans-serif"
+          >1,000+</span
+        >
+        <span class="text-sm" style="color: var(--text-secondary)">Deliveries completed</span>
+      </div>
+      <div class="flex flex-col gap-1 px-8 py-6" style="background: var(--surface)">
+        <span
+          class="text-3xl font-bold"
+          style="color: var(--text); font-family: 'Manrope', sans-serif"
+          >Coastal</span
+        >
+        <span class="text-sm" style="color: var(--text-secondary)">Region coverage</span>
+      </div>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
+        style="background: var(--surface); border-color: var(--border)"
+        onmouseover="
+          this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+        "
+        onmouseout="this.style.borderColor = 'var(--border)'"
+      >
+        <div
+          class="w-11 h-11 rounded-xl flex items-center justify-center"
+          style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+        >
+          <i class="pi pi-shield text-xl" style="color: var(--color-primary)"></i>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-base font-bold" style="color: var(--text)">Guaranteed Delivery</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+            No more missed deliveries or empty promises. We guarantee your goods reach their
+            destination — or we make it right.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
+        style="background: var(--surface); border-color: var(--border)"
+        onmouseover="
+          this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+        "
+        onmouseout="this.style.borderColor = 'var(--border)'"
+      >
+        <div
+          class="w-11 h-11 rounded-xl flex items-center justify-center"
+          style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+        >
+          <i class="pi pi-users text-xl" style="color: var(--color-primary)"></i>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-base font-bold" style="color: var(--text)">In-House Couriers</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+            Every courier is hired, trained, and managed by us. No third-party freelancers — just
+            dedicated professionals who represent your brand.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
+        style="background: var(--surface); border-color: var(--border)"
+        onmouseover="
+          this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+        "
+        onmouseout="this.style.borderColor = 'var(--border)'"
+      >
+        <div
+          class="w-11 h-11 rounded-xl flex items-center justify-center"
+          style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+        >
+          <i class="pi pi-map-marker text-xl" style="color: var(--color-primary)"></i>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-base font-bold" style="color: var(--text)">Live Courier Tracking</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+            Know exactly where your delivery is at all times. Real-time location tracking means no
+            more "where is my order?" calls.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
+        style="background: var(--surface); border-color: var(--border)"
+        onmouseover="
+          this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+        "
+        onmouseout="this.style.borderColor = 'var(--border)'"
+      >
+        <div
+          class="w-11 h-11 rounded-xl flex items-center justify-center"
+          style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+        >
+          <i class="pi pi-heart text-xl" style="color: var(--color-primary)"></i>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-base font-bold" style="color: var(--text)">Preferred Courier</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary)">
+            Retailers can select a regular courier they trust. Familiar faces build confidence — and
+            repeat business comes naturally.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA strip -->
+    <div
+      class="mt-10 flex items-center justify-between gap-6 flex-wrap rounded-2xl border px-8 py-6"
+      style="background: var(--surface); border-color: var(--border)"
+    >
+      <div class="flex flex-col gap-1">
+        <p class="font-bold text-lg" style="color: var(--text)">
+          Ready to simplify your deliveries?
+        </p>
+        <p class="text-sm" style="color: var(--text-secondary)">
+          Join businesses across the Coast already delivering with confidence.
+        </p>
+      </div>
+      <button
+        class="px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide transition-colors duration-200 text-white flex-shrink-0"
+        style="background: var(--color-primary)"
+        onmouseover="this.style.background = 'var(--color-primary-hover)'"
+        onmouseout="this.style.background = 'var(--color-primary)'"
+      >
+        Reach out to us
+      </button>
+    </div>
+  </div>
+</section>

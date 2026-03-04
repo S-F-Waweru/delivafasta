@@ -1,3 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+@import 'primeicons/primeicons.css';
+@custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-heading: 'Manrope', sans-serif;
+
+  /* Grain Industries Blue Scale (Monochrome) */
+  --color-blue-50: oklch(97% 0.01 255);
+  --color-blue-100: oklch(93% 0.03 255);
+  --color-blue-200: oklch(85% 0.06 255);
+  --color-blue-300: oklch(75% 0.09 255);
+  --color-blue-400: oklch(62% 0.12 255);
+  --color-blue-500: oklch(44% 0.13 255); /* #3D5EA8 — Logo Blue */
+  --color-blue-600: oklch(37% 0.11 255);
+  --color-blue-700: oklch(30% 0.09 255);
+  --color-blue-800: oklch(22% 0.06 255);
+  --color-blue-900: oklch(15% 0.04 255);
+  --color-blue-950: oklch(10% 0.02 255);
+
+  /* Semantic colors */
+  --color-primary: var(--color-blue-500);
+  --color-primary-hover: var(--color-blue-600);
+  --color-secondary: var(--color-blue-700);
+  --background: oklch(100% 0 0);
+  --surface: oklch(98% 0.01 255);
+  --text: var(--color-blue-800);
+  --text-secondary: var(--color-blue-600);
+  --border: oklch(90% 0.02 255);
+}
+.dark {
+  --color-primary: var(--color-blue-400);
+  --color-primary-hover: var(--color-blue-300);
+  --color-secondary: var(--color-blue-200);
+  --background: oklch(12% 0.03 255);
+  --surface: oklch(18% 0.04 255);
+  --text: oklch(95% 0.01 255);
+  --text-secondary: oklch(70% 0.05 255);
+  --border: oklch(28% 0.05 255);
+}
+@layer base {
+  body {
+    font-family: var(--font-family-sans), sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-family-heading), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
