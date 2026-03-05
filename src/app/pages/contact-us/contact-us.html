@@ -1,1 +1,258 @@
-<p>contact-us works!</p>
+<section class="relative overflow-hidden py-24" style="background-color: var(--background)">
+  <div class="container mx-auto px-6 lg:px-20 flex flex-col gap-16">
+    <!-- Header -->
+    <div class="flex flex-col gap-4 max-w-xl">
+      <div
+        class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
+        style="
+          border-color: color-mix(in oklch, var(--color-primary) 40%, transparent);
+          background: color-mix(in oklch, var(--color-primary) 10%, transparent);
+          color: var(--color-blue-300);
+        "
+      >
+        <i class="pi pi-phone text-[10px]"></i>
+        Contact Us
+      </div>
+      <h1
+        class="font-bold leading-[1.06] tracking-tight"
+        style="font-size: clamp(2rem, 4vw, 3rem); color: var(--text)"
+      >
+        We're just a<br />
+        <span style="color: var(--color-primary)">message away.</span>
+      </h1>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary); max-width: 480px">
+        Have a question, want to get started, or just want to say hello? Reach out — we'll get back
+        to you quickly.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <!-- Left: Contact details -->
+      <div class="flex flex-col gap-5">
+        <!-- Phone -->
+        <div
+          class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
+          style="background: var(--surface); border-color: var(--border)"
+          onmouseover="
+            this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+          "
+          onmouseout="this.style.borderColor = 'var(--border)'"
+        >
+          <div
+            class="w-12 h-12 rounded-xl flex items-center justify-center /shrink-0"
+            style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+          >
+            <i class="pi pi-phone text-xl" style="color: var(--color-primary)"></i>
+          </div>
+          <div class="flex flex-col gap-0.5">
+            <p
+              class="text-xs uppercase tracking-widest font-semibold"
+              style="color: var(--text-secondary)"
+            >
+              Call us
+            </p>
+            <a
+              href="tel:+254700000000"
+              class="text-lg font-bold transition-colors duration-200"
+              style="color: var(--text)"
+              onmouseover="this.style.color = 'var(--color-primary)'"
+              onmouseout="this.style.color = 'var(--text)'"
+              >+254 700 000 000</a
+            >
+            <p class="text-xs" style="color: var(--text-secondary)">Mon – Sat, 7am – 7pm</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div
+          class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
+          style="background: var(--surface); border-color: var(--border)"
+          onmouseover="
+            this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+          "
+          onmouseout="this.style.borderColor = 'var(--border)'"
+        >
+          <div
+            class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+            style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+          >
+            <i class="pi pi-whatsapp text-xl" style="color: var(--color-primary)"></i>
+          </div>
+          <div class="flex flex-col gap-0.5">
+            <p
+              class="text-xs uppercase tracking-widest font-semibold"
+              style="color: var(--text-secondary)"
+            >
+              WhatsApp
+            </p>
+            <a
+              href="https://wa.me/254700000000"
+              target="_blank"
+              class="text-lg font-bold transition-colors duration-200"
+              style="color: var(--text)"
+              onmouseover="this.style.color = 'var(--color-primary)'"
+              onmouseout="this.style.color = 'var(--text)'"
+              >+254 700 000 000</a
+            >
+            <p class="text-xs" style="color: var(--text-secondary)">
+              Usually replies within minutes
+            </p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div
+          class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
+          poi
+          \a\
+          ``
+          style="background: var(--surface); border-color: var(--border)"
+          onmouseover="
+            this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+          "
+          onmouseout="this.style.borderColor = 'var(--border)'"
+        >
+          <div
+            class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+            style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+          >
+            <i class="pi pi-envelope text-xl" style="color: var(--color-primary)"></i>
+          </div>
+          <div class="flex flex-col gap-0.5">
+            <p
+              class="text-xs uppercase tracking-widest font-semibold"
+              style="color: var(--text-secondary)"
+            >
+              Email us
+            </p>
+            <a
+              href="mailto:hello@delivafasta.com"
+              class="text-lg font-bold transition-colors duration-200"
+              style="color: var(--text)"
+              onmouseover="this.style.color = 'var(--color-primary)'"
+              onmouseout="this.style.color = 'var(--text)'"
+              >hello&#64;delivafasta.com</a
+            >
+            <p class="text-xs" style="color: var(--text-secondary)">We reply within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div
+          class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
+          style="background: var(--surface); border-color: var(--border)"
+          onmouseover="
+            this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
+          "
+          onmouseout="this.style.borderColor = 'var(--border)'"
+        >
+          <div
+            class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+            style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
+          >
+            <i class="pi pi-map-marker text-xl" style="color: var(--color-primary)"></i>
+          </div>
+          <div class="flex flex-col gap-0.5">
+            <p
+              class="text-xs uppercase tracking-widest font-semibold"
+              style="color: var(--text-secondary)"
+            >
+              Based in
+            </p>
+            <p class="text-lg font-bold" style="color: var(--text)">Mombasa, Kenya</p>
+            <p class="text-xs" style="color: var(--text-secondary)">Serving the Coastal Region</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Message form -->
+      <div
+        class="rounded-2xl border p-8 flex flex-col gap-6"
+        style="background: var(--surface); border-color: var(--border)"
+      >
+        <div class="flex flex-col gap-1">
+          <h3 class="text-lg font-bold" style="color: var(--text)">Send us a message</h3>
+          <p class="text-sm" style="color: var(--text-secondary)">
+            Fill in the form and we'll get back to you shortly.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- Name -->
+          <div class="flex flex-col gap-1.5">
+            <label
+              class="text-xs font-semibold uppercase tracking-wide"
+              style="color: var(--text-secondary)"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              placeholder="Jane Doe"
+              class="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200"
+              style="
+                background: var(--background);
+                border: 1px solid var(--border);
+                color: var(--text);
+              "
+              onfocus="this.style.borderColor = 'var(--color-primary)'"
+              onblur="this.style.borderColor = 'var(--border)'"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="flex flex-col gap-1.5">
+            <label
+              class="text-xs font-semibold uppercase tracking-wide"
+              style="color: var(--text-secondary)"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              placeholder="jane@company.com"
+              class="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200"
+              style="
+                background: var(--background);
+                border: 1px solid var(--border);
+                color: var(--text);
+              "
+              onfocus="this.style.borderColor = 'var(--color-primary)'"
+              onblur="this.style.borderColor = 'var(--border)'"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="flex flex-col gap-1.5">
+            <label
+              class="text-xs font-semibold uppercase tracking-wide"
+              style="color: var(--text-secondary)"
+              >Message</label
+            >
+            <textarea
+              rows="5"
+              placeholder="Tell us what you need..."
+              class="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
+              style="
+                background: var(--background);
+                border: 1px solid var(--border);
+                color: var(--text);
+              "
+              onfocus="this.style.borderColor = 'var(--color-primary)'"
+              onblur="this.style.borderColor = 'var(--border)'"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button
+            class="w-full py-3.5 rounded-full font-semibold text-sm tracking-wide transition-colors duration-200 text-white flex items-center justify-center gap-2"
+            style="background: var(--color-primary)"
+            onmouseover="this.style.background = 'var(--color-primary-hover)'"
+            onmouseout="this.style.background = 'var(--color-primary)'"
+          >
+            <i class="pi pi-send text-sm"></i>
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
