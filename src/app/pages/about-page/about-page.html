@@ -1,5 +1,40 @@
-<section class="relative overflow-hidden py-24" style="background-color: var(--background)">
-  <div class="container mx-auto px-6 lg:px-20 flex flex-col gap-24">
+<section class="relative overflow-hidden py-14" style="background-color: var(--background)">
+  <!--Ze Effects-->
+  <div
+    class="absolute inset-0"
+    style="
+      background:
+        radial-gradient(
+          ellipse 70% 50% at 65% 35%,
+          color-mix(in oklch, var(--color-primary) 12%, transparent) 0%,
+          transparent 70%
+        ),
+        radial-gradient(
+          ellipse 40% 40% at 20% 80%,
+          color-mix(in oklch, var(--color-secondary) 10%, transparent) 0%,
+          transparent 60%
+        );
+    "
+  ></div>
+
+  <!-- Grid -->
+  <div
+    class="absolute inset-0 opacity-[0.04]"
+    style="
+      background-image:
+        linear-gradient(var(--text) 1px, transparent 1px),
+        linear-gradient(90deg, var(--text) 1px, transparent 1px);
+      background-size: 56px 56px;
+    "
+  ></div>
+
+  <!-- Glow orb -->
+  <div
+    class="absolute top-1/4 right-1/3 w-[500px] h-[500px] rounded-full blur-[120px]"
+    style="background: color-mix(in oklch, var(--color-primary) 8%, transparent)"
+  ></div>
+
+  <div class="container mx-auto px-6 lg:px-20 flex flex-col gap-12">
     <!-- Hero block -->
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Left -->
@@ -40,7 +75,7 @@
           <div class="flex flex-col gap-0.5">
             <span
               class="text-2xl font-bold"
-              style="color: var(--text); font-family: 'Manrope', sans-serif"
+              style="color: var(--text); font-family: var(--font-family-heading)"
               >100+</span
             >
             <span class="text-xs uppercase tracking-wide" style="color: var(--text-secondary)"
@@ -51,7 +86,7 @@
           <div class="flex flex-col gap-0.5">
             <span
               class="text-2xl font-bold"
-              style="color: var(--text); font-family: 'Manrope', sans-serif"
+              style="color: var(--text); font-family: var(--font-family-heading)"
               >1,000+</span
             >
             <span class="text-xs uppercase tracking-wide" style="color: var(--text-secondary)"
@@ -62,7 +97,7 @@
           <div class="flex flex-col gap-0.5">
             <span
               class="text-2xl font-bold"
-              style="color: var(--text); font-family: 'Manrope', sans-serif"
+              style="color: var(--text); font-family: var(--font-family-heading)"
               >2025</span
             >
             <span class="text-xs uppercase tracking-wide" style="color: var(--text-secondary)"
@@ -215,7 +250,7 @@
 
     <!-- Bottom CTA -->
     <div
-      class="flex items-center justify-between gap-6 flex-wrap rounded-2xl border px-8 py-6"
+      class="flex items-center justify-between gap-6 flex-wrap rounded-2xl border px-3 py-6"
       style="background: var(--surface); border-color: var(--border)"
     >
       <div class="flex flex-col gap-1">

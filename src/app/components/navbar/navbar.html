@@ -4,40 +4,30 @@
       <img class="h-10" src="images/logo.svg" alt="Delivafasta" />
     </h2>
 
-    <div class="hidden md:flex gap-8 items-center">
-      <p class="nav-item cursor-pointer" routerLink="/home" routerLinkActive="text-primary active">
-        Home
-      </p>
-      <p class="nav-item cursor-pointer" routerLink="/about" routerLinkActive="text-primary active">
-        About us
-      </p>
-      <p
-        class="nav-item cursor-pointer"
-        routerLink="/products"
-        routerLinkActive="text-primary active"
-      >
-        Products
-      </p>
-      <p
-        class="nav-item cursor-pointer"
-        routerLink="/contact-us"
-        routerLinkActive="text-primary active"
-      >
-        Contact Us
-      </p>
-    </div>
-
     <div class="flex items-center gap-4">
-      <button
-        (click)="toggleDarkMode()"
-        class="flex justify-center align-middle p-3 bg-background rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors me-3"
-        type="button"
-      >
-        <i
-          [className]="isDarkMode() ? 'pi pi-sun text-yellow-500' : 'pi pi-moon text-gray-400'"
-          style="font-size: 1.2rem"
-        ></i>
-      </button>
+      <div class="hidden md:flex gap-8 items-center me-4">
+        <p
+          class="nav-item cursor-pointer"
+          routerLink="/home"
+          routerLinkActive="text-primary active"
+        >
+          Home
+        </p>
+        <p
+          class="nav-item cursor-pointer"
+          routerLink="/about"
+          routerLinkActive="text-primary active"
+        >
+          About us
+        </p>
+        <p
+          class="nav-item cursor-pointer"
+          routerLink="/contact-us"
+          routerLinkActive="text-primary active"
+        >
+          Contact Us
+        </p>
+      </div>
 
       <p-button
         routerLink="/contact-us"
@@ -48,6 +38,17 @@
         class="hidden md:block text-xl"
       >
       </p-button>
+
+      <button
+        (click)="toggleDarkMode()"
+        class="flex justify-center align-middle p-3 bg-background rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors me-3"
+        type="button"
+      >
+        <i
+          [className]="isDarkMode() ? 'pi pi-sun text-yellow-500' : 'pi pi-moon text-gray-400'"
+          style="font-size: 1.2rem"
+        ></i>
+      </button>
 
       <sidebar></sidebar>
     </div>

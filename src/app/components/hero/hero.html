@@ -2,6 +2,41 @@
   class="relative overflow-hidden flex items-start"
   style="background-color: var(--background)"
 >
+  <!--Ze Effects-->
+  <div
+    class="absolute inset-0"
+    style="
+      background:
+        radial-gradient(
+          ellipse 70% 50% at 65% 35%,
+          color-mix(in oklch, var(--color-primary) 12%, transparent) 0%,
+          transparent 70%
+        ),
+        radial-gradient(
+          ellipse 40% 40% at 20% 80%,
+          color-mix(in oklch, var(--color-secondary) 10%, transparent) 0%,
+          transparent 60%
+        );
+    "
+  ></div>
+
+  <!-- Grid -->
+  <div
+    class="absolute inset-0 opacity-[0.04]"
+    style="
+      background-image:
+        linear-gradient(var(--text) 1px, transparent 1px),
+        linear-gradient(90deg, var(--text) 1px, transparent 1px);
+      background-size: 56px 56px;
+    "
+  ></div>
+
+  <!-- Glow orb -->
+  <div
+    class="absolute top-1/4 right-1/3 w-[500px] h-[500px] rounded-full blur-[120px]"
+    style="background: color-mix(in oklch, var(--color-primary) 8%, transparent)"
+  ></div>
+
   <div
     class="container mx-auto px-6 lg:px-20 relative z-10 py-14 grid lg:grid-cols-2 gap-20 items-center"
   >
@@ -90,7 +125,7 @@
             style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
           >
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
               style="background: color-mix(in oklch, var(--color-primary) 15%, transparent)"
             >
               <i class="pi pi-box text-base" style="color: var(--color-primary)"></i>
@@ -104,7 +139,7 @@
               </p>
             </div>
             <span
-              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 flex items-center gap-1"
+              class="text-xs font-semibold px-2.5 py-1 rounded-full shrink-0 flex items-center gap-1"
               style="
                 background: color-mix(in oklch, var(--color-primary) 15%, transparent);
                 color: var(--color-primary);
@@ -120,7 +155,7 @@
             style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
           >
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              class="w-9 h-9 rounded-lg flex items-center justify-center hrink-0"
               style="background: color-mix(in oklch, var(--color-secondary) 20%, transparent)"
             >
               <i class="pi pi-box text-base" style="color: var(--color-blue-300)"></i>
@@ -132,7 +167,7 @@
               <p class="text-xs" style="color: var(--text-secondary)">Industrial Area → Kisumu</p>
             </div>
             <span
-              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 border flex items-center gap-1"
+              class="text-xs font-semibold px-2.5 py-1 rounded-full shrink-0 border flex items-center gap-1"
               style="border-color: var(--border); color: var(--text-secondary)"
             >
               <i class="pi pi-clock text-[10px]"></i> Scheduled
@@ -145,7 +180,7 @@
             style="background: color-mix(in oklch, var(--color-primary) 6%, var(--background))"
           >
             <div
-              class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+              class="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
               style="background: color-mix(in oklch, var(--color-blue-300) 15%, transparent)"
             >
               <i class="pi pi-box text-base" style="color: var(--color-blue-200)"></i>
@@ -157,7 +192,7 @@
               <p class="text-xs" style="color: var(--text-secondary)">Ruiru Plant → Mombasa</p>
             </div>
             <span
-              class="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 border flex items-center gap-1"
+              class="text-xs font-semibold px-2.5 py-1 rounded-full shrink-0 border flex items-center gap-1"
               style="
                 border-color: color-mix(in oklch, var(--color-primary) 30%, transparent);
                 color: var(--color-primary);
@@ -192,7 +227,7 @@
         style="background: var(--surface); border-color: var(--border)"
       >
         <div
-          class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+          class="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
           style="background: color-mix(in oklch, var(--color-primary) 15%, transparent)"
         >
           <i class="pi pi-check-circle text-sm" style="color: var(--color-primary)"></i>
