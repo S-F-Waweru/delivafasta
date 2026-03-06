@@ -44,10 +44,15 @@
         class="flex justify-center align-middle p-3 bg-background rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors me-3"
         type="button"
       >
-        <i
+        <!--<i
           [className]="isDarkMode() ? 'pi pi-sun text-yellow-500' : 'pi pi-moon text-gray-400'"
           style="font-size: 1.2rem"
-        ></i>
+        ></i>-->
+        @if(isDarkMode()){
+        <img class="w-8 h-8" src="images/sun-64.png" />
+        }@else {
+        <img class="w-8 h-8" src="images/moon-64.png" />
+        }
       </button>
 
       <sidebar></sidebar>

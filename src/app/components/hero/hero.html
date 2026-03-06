@@ -44,6 +44,7 @@
     <div class="flex flex-col gap-8">
       <!-- Badge -->
       <div
+        #animate
         class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
         style="
           border-color: color-mix(in oklch, var(--color-primary) 40%, transparent);
@@ -59,7 +60,7 @@
       </div>
 
       <!-- Headline -->
-      <div class="flex flex-col gap-3">
+      <div #animate class="flex flex-col gap-3">
         <h1
           class="font-bold leading-[1.06] tracking-tight"
           style="font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--text)"
@@ -75,7 +76,7 @@
       </div>
 
       <!-- CTAs -->
-      <div class="flex items-center gap-4 flex-wrap">
+      <div #animate class="flex items-center gap-4 flex-wrap">
         <button
           class="pl-7 pr-5 py-3.5 rounded-full font-semibold flex justify-center items-center text-sm tracking-wide transition-colors duration-200 text-white"
           style="background: var(--color-primary)"
@@ -83,14 +84,13 @@
           onmouseout="this.style.background = 'var(--color-primary)'"
         >
           Contact us
-
           <i class="text-white pi pi-angle-right ms-2"></i>
         </button>
       </div>
     </div>
 
     <!-- Right: Live dashboard card -->
-    <div class="relative hidden lg:flex flex-col gap-4">
+    <div #animate class="relative hidden lg:flex flex-col gap-4">
       <div
         class="rounded-2xl border p-6 flex flex-col gap-5 backdrop-blur-sm"
         style="background: var(--surface); border-color: var(--border)"

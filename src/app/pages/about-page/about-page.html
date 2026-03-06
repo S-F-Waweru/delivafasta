@@ -40,6 +40,7 @@
       <!-- Left -->
       <div class="flex flex-col gap-6">
         <div
+          #animate
           class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
           style="
             border-color: color-mix(in oklch, var(--color-primary) 40%, transparent);
@@ -52,6 +53,7 @@
         </div>
 
         <h1
+          #animate
           class="font-bold leading-[1.06] tracking-tight"
           style="font-size: clamp(2rem, 4vw, 3.2rem); color: var(--text)"
         >
@@ -59,19 +61,23 @@
           <span style="color: var(--color-primary)">Built for you.</span>
         </h1>
 
-        <p class="text-lg leading-relaxed" style="color: var(--text-secondary); max-width: 520px">
-          DelivaFasta was founded with a single belief — that every business, whether a flour mill
-          or a corner retailer, deserves courier services that just work. Seamlessly. Efficiently.
-          Every time.
-        </p>
-
-        <p class="text-base leading-relaxed" style="color: var(--text-secondary); max-width: 520px">
-          We serve both sides of the supply chain — the manufacturers and distributors sending
-          goods, and the retailers receiving them. One platform. Zero gaps.
-        </p>
+        <div #animate class="flex flex-col gap-4">
+          <p class="text-lg leading-relaxed" style="color: var(--text-secondary); max-width: 520px">
+            DelivaFasta was founded with a single belief — that every business, whether a flour mill
+            or a corner retailer, deserves courier services that just work. Seamlessly. Efficiently.
+            Every time.
+          </p>
+          <p
+            class="text-base leading-relaxed"
+            style="color: var(--text-secondary); max-width: 520px"
+          >
+            We serve both sides of the supply chain — the manufacturers and distributors sending
+            goods, and the retailers receiving them. One platform. Zero gaps.
+          </p>
+        </div>
 
         <!-- Stats inline -->
-        <div class="flex items-center gap-8 pt-2">
+        <div #animate class="flex items-center gap-8 pt-2">
           <div class="flex flex-col gap-0.5">
             <span
               class="text-2xl font-bold"
@@ -109,6 +115,7 @@
 
       <!-- Right: mission card -->
       <div
+        #animate
         class="rounded-2xl border p-8 flex flex-col gap-6"
         style="background: var(--surface); border-color: var(--border)"
       >
@@ -145,7 +152,7 @@
 
     <!-- Values -->
     <div class="flex flex-col gap-10">
-      <div class="flex flex-col gap-3">
+      <div #animate class="flex flex-col gap-3">
         <p
           class="text-xs uppercase tracking-widest font-semibold"
           style="color: var(--text-secondary)"
@@ -158,7 +165,9 @@
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Card 1 -->
         <div
+          #animate
           class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -180,7 +189,9 @@
           </div>
         </div>
 
+        <!-- Card 2 -->
         <div
+          #animate
           class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -202,7 +213,9 @@
           </div>
         </div>
 
+        <!-- Card 3 -->
         <div
+          #animate
           class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -224,7 +237,9 @@
           </div>
         </div>
 
+        <!-- Card 4 -->
         <div
+          #animate
           class="flex flex-col gap-4 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -250,6 +265,7 @@
 
     <!-- Bottom CTA -->
     <div
+      #animate
       class="flex items-center justify-between gap-6 flex-wrap rounded-2xl border px-3 py-6"
       style="background: var(--surface); border-color: var(--border)"
     >

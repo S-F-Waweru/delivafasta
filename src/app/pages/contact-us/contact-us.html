@@ -36,7 +36,7 @@
 
   <div class="container mx-auto px-6 lg:px-12 flex flex-col gap-16">
     <!-- Header -->
-    <div class="flex flex-col gap-4 max-w-xl">
+    <div #animate class="flex flex-col gap-4 max-w-xl">
       <div
         class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full border text-sm font-semibold tracking-wide"
         style="
@@ -66,6 +66,7 @@
       <div class="flex flex-col gap-5">
         <!-- Phone -->
         <div
+          #animate
           class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -74,7 +75,7 @@
           onmouseout="this.style.borderColor = 'var(--border)'"
         >
           <div
-            class="w-12 h-12 rounded-xl flex items-center justify-center /shrink-0"
+            class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
             style="background: color-mix(in oklch, var(--color-primary) 12%, transparent)"
           >
             <i class="pi pi-phone text-xl" style="color: var(--color-primary)"></i>
@@ -100,6 +101,7 @@
 
         <!-- WhatsApp -->
         <div
+          #animate
           class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -137,10 +139,8 @@
 
         <!-- Email -->
         <div
+          #animate
           class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
-          poi
-          \a\
-          ``
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
             this.style.borderColor = 'color-mix(in oklch, var(--color-primary) 40%, transparent)'
@@ -174,6 +174,7 @@
 
         <!-- Location -->
         <div
+          #animate
           class="flex items-center gap-5 p-6 rounded-2xl border transition-all duration-200"
           style="background: var(--surface); border-color: var(--border)"
           onmouseover="
@@ -202,6 +203,7 @@
 
       <!-- Right: Message form -->
       <div
+        #animate
         class="rounded-2xl border p-8 flex flex-col gap-6"
         style="background: var(--surface); border-color: var(--border)"
       >
